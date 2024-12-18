@@ -27,6 +27,10 @@ namespace MyContacts.Model
             await contactDatabase.InsertContact(contact);
         }
 
+        public async Task UpdateContact(ContactInfo contact)
+        {
+            await contactDatabase.UpdateContract(contact);
+        }
 
         public async Task DeleteContact(ContactInfo contact)
         {

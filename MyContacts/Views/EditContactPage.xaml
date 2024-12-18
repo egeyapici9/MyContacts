@@ -9,11 +9,34 @@
             Text="Welcome to .NET MAUI!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+        
+        <Frame BorderColor="Silver" Padding="10,2,10,2" >
+            <HorizontalStackLayout>
+                <Label Text="Name " VerticalOptions="Center" WidthRequest="150"></Label>
+                <Entry x:Name="NameEntry" VerticalOptions="Center" WidthRequest="200"></Entry>
+            </HorizontalStackLayout>
+        </Frame>
 
         <Frame BorderColor="Silver" Padding="10,2,10,2" >
+            <HorizontalStackLayout>
+                <Label Text="Phone " VerticalOptions="Center" WidthRequest="150"></Label>
+                <Entry x:Name="PhoneEntry" Keyboard="Telephone" VerticalOptions="Center" WidthRequest="200"></Entry>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Frame BorderColor="Silver" Padding="10,2,10,2" >
+            <HorizontalStackLayout>
+                <Label Text="Email" VerticalOptions="Center" WidthRequest="150"></Label>
+                <Entry x:Name="EmailEntry" Keyboard="Email" VerticalOptions="Center" WidthRequest="200"></Entry>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Frame BorderColor="Silver" Padding="10,2,10,2" >
+            
             <HorizontalStackLayout Padding="5">
 
                 <Button Text="Cancel" VerticalOptions="Center" BackgroundColor="Red" x:Name="DeleteButton" Clicked="DeleteButton_Clicked"></Button>
+                <Button Text="Update" VerticalOptions="Center" BackgroundColor="GreenYellow" x:Name="UpdateButton" Clicked="UpdateButton_Clicked"></Button>
 
             </HorizontalStackLayout>
         </Frame>
